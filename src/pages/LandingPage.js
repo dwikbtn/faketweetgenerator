@@ -1,10 +1,19 @@
 import React from 'react'
-import '../assets/scss/main.scss'
-import './index.scss'
+
+import Header from 'parts/Header'
+import Hero from 'parts/Hero'
+import { Component } from 'react'
+import MainApp from 'parts/MainApp'
 
 
-export default function LandingPage() {
-    return (
-        <></>
-    )
+export default class LandingPage extends Component {
+    render() {
+        return (
+            <>
+                <Header {...this.props} />
+                <Hero {...this.props} />
+                <MainApp {...this.props} />
+            </>
+        )
+    }
 }
