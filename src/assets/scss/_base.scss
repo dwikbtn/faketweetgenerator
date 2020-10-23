@@ -1,11 +1,26 @@
 //
 @import './reset';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono');
 
 //variables
+$font-family-sans-serif: "Roboto Mono" !default;
+$font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:       $font-family-sans-serif !default;
+
 $primary: #1B262C ;
 $secondary: #0F4C75;
 $brown: #4A4531;
-$backClr: #2BB2BB;
+$backClr: #BBE1FA;
+
+//style
+*{
+    background-color: $backClr;
+}
+
+
+
+
 
 
 /* import bootstrap to set changes */
