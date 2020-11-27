@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import iconImg from 'assets/images/defaultProfile.png'
 import DateTimePicker from 'react-datetime-picker';
+import TweetBody from '../../parts/TweetBody'
 
 
 import './index.scss'
@@ -166,14 +167,16 @@ export default class Form extends Component {
                         </div>
                     </form>
                     <div className="col-sm ">
-                        <p>{name}</p>
-                        <p>{handle}</p>
-                        <p>{bodyTweet}</p>
-                        <p>{from}</p>
-                        <p>{rt}</p>
-                        <p>{qrt}</p>
-                        <p>{likes}</p>
-                        <p>{reply}</p>
+                        <TweetBody
+                            name={name}
+                            username={handle}
+                            body={bodyTweet}
+                            from={from}
+                            rt={rt}
+                            qrt={qrt}
+                            likes={likes}
+                            reply={reply}
+                        />
 
                     </div>
                 </div>
